@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile</title>
+    <!-- Agregar enlaces a Bootstrap y jQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #93BFCF;">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <img src="img/Smile logo.png" style="width: 100px;" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio">INICIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Comic">COMIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Creadores">CREADORES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Personajes">PERSONAJES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="Incio">
+        <div class="row">
+            <div class="col-sm-12 col-xl-6 text-center" style="margin-top: 10%;">
+                <img src="./img/Smile logo.png" alt="" class="my-5 mt-5 img-fluid"
+                    style="width: 350px; height: 350px; margin-top: 50%;">
+            </div>
+            <div class="shadow p-3 mb-5 col-sm-12 col-xl-6 text-center"
+                style="height: -10%;  background-color: #93BFCF; margin-top: 180px; border-radius: 80%;">
+                <h1 class="" style="color: #EDE9DA; margin-top: 25px">Smile</h1>
+                <h5 class="my-5">A pesar que en la sociedad <br> no le dan la importancia que <br> se necesita a las
+                    personas <br> con depresión
+                    nace smile para <br> concientizar e informar a las personas <br> sobre la depresión, sus causas y la
+                    <br>
+                    importancia que tiene esta en <br> toda la población.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <section class="Comic" style="background-color: #6096B4; margin-top: 10%;">
+        <h1 class="text-center pt-5" style="color: #EDE9DA;">Comic</h1>
+        <div class="container mt-5" id="Comic">
+            <div class="row">
+                <div id="ventanaEmergente" class="ventana-emergente" style="background-color: #6096B4;">
+                    <!-- Aquí se mostrarán las imágenes -->
+                </div>
+                
+                    <div class="col-sm-12 col-xl-7" style="margin-left: 60px;">
+                        <img id="Change" src="./img/galeria1.jpg" alt="" class="w-100"
+                            style="width: 150px; height: 200;">
+                    </div>
+
+                    <div class="col-sm-12 col-xl-4" style="margin-left: 50px;">
+                        <img src="./img/galeria2.jpg" alt="" class="w-50 " onclick="cambio()">
+                        <img src="./img/galeria3.jpg" alt="" class="w-50 pt-4" onclick="cambio2()">
+                        <img src="./img/galeria1.jpg" alt="" class="w-50 pt-4" onclick="cambio3()">
+                    </div>
+
+                <div>
+                    <button type="button" class="btn1 shadow-lg p-3 mb-5 bg-body-tertiary rounded mx-auto d-flex mt-5" py-5><i
+                            class="bi bi-play-fill">comic</i></button>
+                </div>
+                
+                <div class="shadow p-3 mb-5 rounded mt-5" style="background-color: #93BFCF;">
+                    <h2 class="text-center p-1" style="color: #EDE9DA;">Sinopsis</h2>
+                    <p class="text-center mt-2">Andres fue un chico que tuvo un pasado un poco difícil ya que sufría de
+                        bullying
+                        muy fuerte en el colegio eso le <br>
+                        afectaba psicológicamente y en el transcurso de su crecimiento conoció a una persona
+                        experimentada
+                        que
+                        lo <br>
+                        ayudo demasiado para que Andres mejorara en el aspecto mental y en la vida y Andres al ver a sus
+                        allegados mal <br>
+                        y al borde de la depresión decide aconsejarlos y ayudarlos para que no se sientansolos y aunque
+                        sabe
+                        que
+                        no les <br>
+                        soluciona sus problemas por completotrata de hacerlos sentir mejor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Creadores" style="background-color: #6096B4;">
+        <div class="container d-flex justify-content-center shadow rounded" id="Creadores"
+            style="background-color: #93BFCF;">
+            <div class="row">
+                <h1 class="text-center p-5" style="color: #EDE9DA">Creadores</h1>
+                <div class="col-sm-12 col-xl-4 d-flex justify-content-center mb-5">
+
+                    <div class="card" style="width: 15rem; background-color: #93BFCF; border: none;">
+                        <img src="./img/Kevi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-color: #93BFCF;">
+                            <h1 class="card-title text-center">Kevin </h1>
+                        </div>
+                        <button type="button" class="btn3"
+                            onclick="descripción('Kevin','Instagram kevin_ruiz_740, lider de equipo y diseñador')">
+                            Saber mas
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-4 d-flex justify-content-center mb-5">
+                    <div class="card" style="width: 15rem; background-color: #93BFCF; border: none;">
+                        <img src="./img/Adolfo XD.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-color: #93BFCF;">
+                            <h1 class="card-title text-center">Adolfo</h1>
+                        </div>
+                        <button type="button" class="btn3"
+                            onclick="descripción('Adolfo','facebook Adolfo Martinez Mosquera, Ilustrador')">
+                            Saber mas
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-4 d-flex justify-content-center mb-5">
+                    <div class="card " style="width: 15rem; background-color: #93BFCF; border: none;">
+                        <img src="./img/Peludo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-none" style="background-color: #93BFCF;">
+                            <h1 class="card-title text-center">Deibyd</h1>
+                        </div>
+                        <button type="button" class="btn3"
+                            onclick="descripción('Deibyd', 'Instagram deibyd posada, programador')">
+                            Saber mas
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="alertacaja" class="Caja">
+                <div class="terr">
+                    <h1 id="Nombrealerta" class="name"></h1>
+                    <p id="alertainfo" class="info"></p>
+                    <br>
+                    <button class="boton" onclick="cerrar()">Cerrar</button>
+                </div>
+            </div>
+</body>
+</section>
+<section class="comic-gallery" style="background-color: #6096B4;">
+
+    <!-- Sección con la galería -->
+    <div class="container p-5" id="Personajes">
+        <h1 class="text-center p-5" style="color: #EDE9DA">Personajes</h1>
+        <div id="comicCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Lio fondo.jpg" class="d-block w-100" alt="Imagen 1" id="img1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/alejo fondo.jpg" class="d-block w-100" alt="Imagen 2" id="img2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/andres fondo.jpg" class="d-block w-100" alt="Imagen 3" id="img3">
+                </div>
+                <!-- Agrega más imágenes según sea necesario-->
+            </div>
+            <a class="carousel-control-prev" href="#comicCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#comicCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+        <button type="button" class="btn2 shadow-lg p-3 mb-5 bg-body-tertiary rounded mx-auto d-block mt-5" onclick="mostrarInformacion()">
+            Ver personaje
+        </button>
+
+        <!-- Elemento para mostrar la información -->
+        <div id="informacion" class="mt-3 "></div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<section class="footer" style="background-color: #93BFCF;">
+    <footer class="text-light text-center py-2" id="Contacto">
+        <h1 class="text-center" style="color: #EDE9DA">CONTACTO</h1>
+        <p>&copy; 2023 Comic Interactivo</p>
+        <div>
+            <img class="d-flex justify-content-start ms-2" src="img/Smile logo 2.png" style="width: 150px;" alt="">
+            <i class="bi bi-facebook h-100">Smile</i>
+            <i class="bi bi-instagram h-100 ms-5">@Smile</i>
+        </div>
+    </footer>
+</section>
+<script src="./Java.js"></script>
+</body>
+
+</html>
